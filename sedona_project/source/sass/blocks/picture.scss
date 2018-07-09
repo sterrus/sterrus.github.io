@@ -1,0 +1,40 @@
+.picture {
+  width: 320px;
+}
+
+.picture__content {
+  height: 260px;
+  margin: 0;
+  background-color: $white;
+}
+
+.picture__image {
+  width: 320px;
+  height: 260px;
+}
+
+@media (min-width: $tablet-width) {
+  .picture {
+    width: 512px;
+  }
+
+  .picture__content {
+    height: 256px;
+  }
+
+  .picture__image {
+    width: 512px;
+    height: 256px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .picture {
+    width: 800px;
+  }
+
+  .picture__image {
+    width: 800px;
+    height: 256px;
+  }
+}

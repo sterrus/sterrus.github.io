@@ -1,0 +1,46 @@
+@import "normalize.scss";
+@import "variables.scss";
+@import "scaffolding.scss";
+@import "mixins.scss";
+@import "visually-hidden.scss";
+@import "blocks/page-container.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+@import "blocks/picture.scss";
+@import "blocks/advantages.scss";
+@import "blocks/advantage.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social-list.scss";
+@import "blocks/button.scss";
+@import "blocks/modal.scss";
+@import "blocks/photo.scss";
+@import "blocks/review.scss";
+@import "blocks/form.scss";
+@import "blocks/content.scss";
+@import "blocks/page-body.scss";
+@import "blocks/services.scss";
+@import "blocks/reason.scss";
+@import "blocks/hotels.scss";
+@import "blocks/map.scss";
+@import "blocks/page-main.scss";
+@import "blocks/video.scss";
+
+
+
+h2,
+span,
+p,
+b {
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+
+//  max-width: 100%;
+//  height: auto;
+}
+
+

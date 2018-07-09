@@ -1,0 +1,158 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.page-header__logo {
+  display: block;
+  align-self: center;
+  width: 102px;
+  height: 83px;
+  z-index: 5;
+}
+
+.page-header__container {
+  margin-top: -27px;
+  padding: 90px 20px 86px;
+  box-sizing: border-box;
+  background-color: #dbe9f2;
+  background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 363px, 0 0;
+  background-size: 320px 27px, cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@2x.jpg");
+  }
+
+ .page-header__image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+ }
+}
+
+.page-header__container--inner {
+  padding: 52px 44px 68px;
+
+  background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
+  background-position: 0 133px, 50% 100%;
+  background-size: 320px 27px, 240%;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@2x.jpg");
+  }
+}
+
+.page-header__image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    width: 768px;
+    position: relative;
+  }
+
+  .page-header__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .page-header__container {
+    min-height: 518px;
+    margin-top: 0;
+    padding-top: 77px;
+
+    background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@1x.jpg");
+    background-position: 0 461px, 0 0;
+    background-size: 768px 57px, cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@2x.jpg");
+      background-size: 768px 57px, 768px 518px;
+    }
+  }
+
+  .page-header__container--inner {
+    min-height: 290px;
+    padding-top: 94px;
+
+    background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@1x.jpg");
+    background-position: 0 233px, 0 -228px;
+    background-size: 768px 57px, 768px 518px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@2x.jpg");
+    }
+  }
+
+  .page-header__image {
+    width: 460px;
+    height: 350px;
+  }
+
+  .page-header__image--inner {
+    width: 458px;
+    height: 78px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: 1200px;
+  }
+
+  .page-header__logo {
+    left: 50%;
+    width: 187px;
+    height: 97px;
+    margin-left: -94px;
+  }
+
+  .page-header__logo-image {
+    width: 187px;
+    height: 97px;
+  }
+
+  .page-header__container {
+    background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@1x.jpg");
+    background-size: 1200px 57px, cover;
+
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@2x.jpg");
+      background-size: 1200px 518px;
+    }
+  }
+
+  .page-header__container--inner {
+    min-height: 301px;
+    padding-top: 102px;
+
+    background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@1x.jpg");
+    background-position: 0 244px, 0 -217px;
+    background-size: 1200px 57px, 1200px 518px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@2x.jpg");
+    }
+  }
+
+  .page-header__image--inner {
+    width: 460px;
+    height: 79px;
+  }
+}
